@@ -1,0 +1,65 @@
+.footer
+    padding: 80px 0 94px 0
+    color: white
+    background-color: #141718
+    // max-height: 300
+    &__header
+        display: flex
+        justify-content: space-between
+    &__logo
+        width: 250px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &_maintext
+            font-size: 24px
+            font-weight: 500
+            position: relative
+            &::after
+                content: ""
+                position: absolute
+                width: 1px
+                height: 50%
+                background-color: #6C7275
+                border-radius: 2px
+                top: 50%
+                transform: translateY(-50%)
+                right: -15px
+        &_opttext
+            font-size: 14px
+    &__menu
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 293px
+        &_item
+            transition: 0.6s all
+            a
+                color: white
+    hr
+        margin-top: 32px
+        border-color: #6C7275
+        border-radius: 15px
+    &__footer
+        margin-top: 32px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__copyright
+        max-width: 459px
+        width: 100%
+        font-size: 12px
+        display: flex
+        justify-content: space-between
+        &_main
+            font-weight: 400
+        &_privacy, &_terms
+            font-weight: 500
+    &__social
+        max-width: 120px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        img
+            transition: 0.6s all
+            cursor: pointer
