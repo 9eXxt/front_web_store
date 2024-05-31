@@ -203,6 +203,14 @@
             &:hover
                 color: black
                 background-color: #fff
+            &_non_available
+                &:hover
+                    background-color: #555
+                    color: white
+        &_added
+            &:hover
+                background-color: #880808
+                color: white
     .header
         &__menu
             &_item
@@ -222,7 +230,8 @@
     .header
         &__icon
             &:hover    
-                fill: black
+                path
+                    fill: black
         &__language
             &_item
                 &:hover
@@ -242,7 +251,10 @@
             img
                 &:hover
                     scale: 1.2
-
+    .path
+        a
+            &:hover
+                color: black
 
     
     

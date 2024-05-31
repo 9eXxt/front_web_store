@@ -1,0 +1,55 @@
+.product_card
+    max-width: 262px
+    max-height: 459px
+    margin-top: 16px
+    &_content
+        position: relative
+        background-color: #F3F5F7
+        padding: 0 16px 16px 16px
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        .button_bg
+            margin-top: 55px
+    &_favourite
+        position: absolute
+        right: 16px
+        top: 16px
+        transform: translate(-50%)
+        cursor: pointer
+        img
+            // transition: all 0.2s
+    &_img
+        display: block
+        margin-top: 72px
+    &_footer
+        padding-top: 15px
+        font-weight: 500
+    &_name
+        font-size: 16px
+    &_price
+        margin-top: 4px
+        font-size: 14px
+
+.notification 
+    position: absolute
+    top: 10px
+    left: 10px
+    background-color: black
+    color: white
+    padding: 10px
+    border-radius: 5px
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+    z-index: 1000
+    // transition: 1s all
+    opacity: 0
+    transform: translateY(-10px)
+    transition: opacity 0.3s ease, transform 0.3s ease
+
+.notification.show 
+    opacity: 1
+    transform: translateY(0)
+.favourite_added img
+    filter: invert(21%) sepia(80%) saturate(7357%) hue-rotate(357deg) brightness(98%) contrast(121%)
+    // filter: invert(25%) sepia(83%) saturate(6089%) hue-rotate(346deg) brightness(97%) contrast(107%)
